@@ -9,4 +9,6 @@ darwin = Darwin(target_phrase, population_size, mutation_chance)
 answer_data = darwin.evolve()
 
 print()
-print(f"Found answer: \"{answer_data['individual'].dna}\" in generation: {answer_data['generation']}.")
+print(f"Answer: \"{answer_data['individual'].dna}\"")
+print(f"Generation: {answer_data['generation']}")
+print(f"Total individuals: {answer_data['total_individuals']}")

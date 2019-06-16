@@ -20,7 +20,8 @@ class Darwin:
 
         return {
             'individual': self.current_fittest,
-            'generation': generation
+            'generation': generation,
+            'total_individuals': self.population_size * (generation + 1)
         }
 
     def next_generation(self):
