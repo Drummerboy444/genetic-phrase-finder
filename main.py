@@ -2,7 +2,7 @@ from darwin import Darwin
 
 
 population_size = 100
-mutation_chance = 0.1
+mutation_chance = 0.01
 target_phrase = 'Hello World!'
 
 darwin = Darwin(target_phrase, population_size, mutation_chance)

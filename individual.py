@@ -29,8 +29,9 @@ class Individual:
             dna += random.choice([c1, c2])
         return Individual(dna)
 
-    def mutate(self):
-        i = random.choice(range(len(self.dna)))
+    def mutate(self, chance):
         list_dna = list(self.dna)
-        list_dna[i] = random.choice(CHARACTERS)
+        for i in range(len(list_dna)):
+            if random.random() < chance:
+                list_dna[i] = random.choice(CHARACTERS)
         self.dna = ''.join(list_dna)

@@ -41,5 +41,4 @@ class Population:
 
     def mutate(self, chance):
         for individual in self.individuals:
-            if random.random() < chance:
-                individual.mutate()
+            individual.mutate(chance)
